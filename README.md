@@ -1,0 +1,1 @@
+NextJs Tailwind and FramerMotion
