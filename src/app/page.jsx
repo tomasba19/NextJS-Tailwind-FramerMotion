@@ -12,7 +12,7 @@ const Homepage = () => {
         {/* TITLE */}
         <h1 className="text-4xl md:text-6xl font-bold">Full Stack Developer.</h1>
         {/* Description */}
-        <p className="md:text-xl">aca va un texto re copado asdasd biuab sdiu abdsi ubasdiubasd buasdiubaisud aiusdbaisbd a sdaasdasd asd asdaddasd</p>
+        <p className="md:text-xl">aca va un texto re copado asdasd biuab sdiu abdsi ubasdiubasd buasdiubaisud aiusdbaisbd a sdaasdasd asd asdaasd</p>
         {/* BUTTONS */}
         <div className="w-full flex gap-4">
           <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">Projects</button>
