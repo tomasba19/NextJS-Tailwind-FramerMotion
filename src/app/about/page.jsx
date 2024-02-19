@@ -54,7 +54,19 @@ const AboutPage = () => {
             {/*SKILLS TITTLE*/}
             <h1 className="font-bold text-2xl">Skills</h1>
             {/*SKILLS LIST*/}
-            <div className=""></div>
+            <div className="flex gap-4 flex-wrap">
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">React</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">HTML</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">CSS</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Redux</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Node</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">SQL</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Next</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">GitHub</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">PostGres</div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">FramerMotion</div>
+            </div>
             {/*SKILLS SCROLL*/}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
