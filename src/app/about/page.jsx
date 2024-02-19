@@ -1,12 +1,25 @@
 "use client";
 import { useRef } from "react";
 import Brain from "@/components/brain";
-import { motion, useScroll } from "framer-motion";
+import { motion, useInView, useScroll } from "framer-motion";
 
 const AboutPage = () => {
   const containerRef = useRef();
-  const {scrollYProgress} = useScroll({container:containerRef})
+  const { scrollYProgress } = useScroll({ container: containerRef });
 
+  const skillRef = useRef();
+  const isSkillRefInView = useInView(
+    skillRef,
+    { margin: "-100px" },
+    { once: true }
+  );
+
+  const experienceRef = useRef();
+  const isExperienceRefInView = useInView(
+    experienceRef,
+    { margin: "-100px" },
+    { once: true }
+  );
 
   return (
     <motion.div
@@ -25,11 +38,17 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">About Me</h1>
             {/*BIOGRAPHY DESCRIPTION*/}
             <p className="text-lg">
-              aca va otro text re contra re copado asodnaiosd asindion iasndin
-              iansd0in asidninasd i0ansdin asindoiasnd oinasn sns snns n nssd
+              Since a young age, my fascination with technology has led me to
+              immerse myself in the world of web development. In 2023, I decided
+              to fully commit to this passion.
+              <p>
+                Im excited to share my knowledge with leading companies in the
+                industry, with the purpose of growing professionally and
+                strengthening both my technical and soft skills.
+              </p>
             </p>
             {/*BIOGRAPHY QUOTE*/}
-            <span className="italic">asodn aoisnd ioasdn ioasnd iooin</span>
+            <span className="italic">If you can dream it, you can do it.</span>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
@@ -55,11 +74,22 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/*SKILLS CONTAINER*/}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/*SKILLS TITTLE*/}
-            <h1 className="font-bold text-2xl">Skills</h1>
+            <motion.h1
+              initial={{ x: "-400px" }}
+              animate={isSkillRefInView ? { x: "0" } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              Skills
+            </motion.h1>
             {/*SKILLS LIST*/}
-            <div className="flex gap-4 flex-wrap">
+            <motion.div
+              initial={{ x: "-400px" }}
+              animate={isSkillRefInView ? { x: "0" } : {}}
+              className="flex gap-4 flex-wrap"
+            >
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
               </div>
@@ -93,8 +123,8 @@ const AboutPage = () => {
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 FramerMotion
               </div>
-            </div>
-            {/*SKILLS SCROLL*/}
+            </motion.div>
+            {/*SKILLS SCROLL SVG*/}
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -119,11 +149,25 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/*EXPERIENCE CONTAINER*/}
-          <div className="flex flex-col gap-12 justify-center pb-48">
+          <div
+            className="flex flex-col gap-12 justify-center pb-48"
+            ref={experienceRef}
+          >
             {/*EXPERIENCE TITTLE*/}
-            <h1 className="font-bold text-2xl">Experience</h1>
+            <motion.h1
+              initial={{ x: "-400px" }}
+              animate={isExperienceRefInView ? { x: "0" } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl"
+            >
+              Experience
+            </motion.h1>
             {/*EXPERIENCE LIST*/}
-            <div className="">
+            <motion.div
+              initial={{ x: "-400px" }}
+              animate={isExperienceRefInView ? { x: "0" } : {}}
+              className=""
+            >
               {/*EXPERIENCE LIST ITEM*/}
               <div className="flex justify-between h-48">
                 {/*LEFT*/}
@@ -133,11 +177,21 @@ const AboutPage = () => {
                     Full Stack Developer
                   </div>
                   {/*JOB DESCRIPTION*/}
-                  <div className="p-3 text-sm italic">Intensive coding bootcamp</div>
+                  <div className="p-3 text-sm italic">
+                    Bootcamp specialized on web developtment.
+                    During the bootcamp, I completed multiple tests and had the
+                    opportunity to work on various projects. This allowed me to
+                    acquire valuable experience working with others using the
+                    Scrum methodology for agile team management.
+                  </div>
                   {/*JOB DATE*/}
-                  <div className="p-3 text-red-400 text-sm font-semibold">2023 May-September</div>
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2023
+                  </div>
                   {/*JOB COMPANY*/}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">Henry BootCamp</div>
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    SoyHenry BootCamp
+                  </div>
                 </div>
                 {/*CENTER*/}
                 <div className="w-1/6 flex justify-center">
@@ -153,9 +207,7 @@ const AboutPage = () => {
               {/*EXPERIENCE LIST ITEM*/}
               <div className="flex justify-between h-48">
                 {/*LEFT*/}
-                <div className="w-1/3">
-                  
-                </div>
+                <div className="w-1/3"></div>
                 {/*CENTER*/}
                 <div className="w-1/6 flex justify-center">
                   {/*LINE*/}
@@ -181,8 +233,7 @@ const AboutPage = () => {
                 {/*LEFT*/}
                 <div className="w-1/3">
                   {/*JOB TITLE*/}
-                  <div className=" p-3 font-semibold rounded-b-lg rounded-s-lg">
-                  </div>
+                  <div className=" p-3 font-semibold rounded-b-lg rounded-s-lg"></div>
                   {/*JOB DESCRIPTION*/}
                   <div className="p-3 text-sm italic"></div>
                   {/*JOB DATE*/}
@@ -201,8 +252,7 @@ const AboutPage = () => {
                 {/*RIGHT*/}
                 <div className="w-1/3"></div>
               </div>
-              
-            </div>
+            </motion.div>
           </div>
         </div>
         {/*SVG CONTAINER*/}

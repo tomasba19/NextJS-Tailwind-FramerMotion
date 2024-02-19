@@ -24,8 +24,7 @@ const Homepage = () => {
           </h1>
           {/* Description */}
           <p className="md:text-xl">
-            aca va un texto re copado asdasd biuab sdiu abdsi ubasdiubasd
-            buasdiubaisud aiusdbaisbd a sdaasdasd asd asdaasd
+            Make it work, make it right, make it fast.
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
