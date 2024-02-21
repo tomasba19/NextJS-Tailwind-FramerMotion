@@ -35,7 +35,7 @@ const AboutPage = () => {
           {/*BIOGRAPHY CONTAINER*/}
           <div className="flex flex-col gap-12 justify-center">
             {/*BIOGRAPHY TITTLE*/}
-            <h1 className="font-bold text-2xl">About Me</h1>
+            <h1 className="font-bold text-2xl underline">About Me</h1>
             {/*BIOGRAPHY DESCRIPTION*/}
             <p className="text-lg">
               Since a young age, my fascination with technology has led me to
@@ -80,7 +80,7 @@ const AboutPage = () => {
               initial={{ x: "-400px" }}
               animate={isSkillRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl underline"
             >
               Skills
             </motion.h1>
@@ -112,7 +112,7 @@ const AboutPage = () => {
                 SQL
               </div>
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Next
+                Next.JS
               </div>
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 GitHub
@@ -121,7 +121,7 @@ const AboutPage = () => {
                 PostGres
               </div>
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                FramerMotion
+                TailwindCSS
               </div>
             </motion.div>
             {/*SKILLS SCROLL SVG*/}
@@ -158,7 +158,7 @@ const AboutPage = () => {
               initial={{ x: "-400px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl underline"
             >
               Experience
             </motion.h1>
@@ -171,21 +171,21 @@ const AboutPage = () => {
               {/*EXPERIENCE LIST ITEM*/}
               <div className="flex justify-between h-48">
                 {/*LEFT*/}
-                <div className="w-1/3">
+                <div className="w-full">
                   {/*JOB TITLE*/}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">
                     Full Stack Developer
                   </div>
                   {/*JOB DESCRIPTION*/}
-                  <div className="p-3 text-sm italic">
-                    Bootcamp specialized on web developtment.
-                    During the bootcamp, I completed multiple tests and had the
+                  <div className="p-2 text-sm italic">
+                    Intensive Full Stack web development training program.
+                    <p>During the bootcamp, I completed multiple tests and had the
                     opportunity to work on various projects. This allowed me to
                     acquire valuable experience working with others using the
-                    Scrum methodology for agile team management.
+                    Scrum methodology for agile team management.</p>
                   </div>
                   {/*JOB DATE*/}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-2 text-red-400 text-sm font-semibold">
                     2023
                   </div>
                   {/*JOB COMPANY*/}
@@ -194,13 +194,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/*CENTER*/}
-                <div className="w-1/6 flex justify-center">
-                  {/*LINE*/}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/*LINE CIRCLE*/}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
+                
                 {/*RIGHT*/}
                 <div className="w-1/3"></div>
               </div>
@@ -208,14 +202,7 @@ const AboutPage = () => {
               <div className="flex justify-between h-48">
                 {/*LEFT*/}
                 <div className="w-1/3"></div>
-                {/*CENTER*/}
-                <div className="w-1/6 flex justify-center">
-                  {/*LINE*/}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/*LINE CIRCLE*/}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
+               
                 {/*RIGHT*/}
                 <div className="w-1/3">
                   {/*JOB TITLE*/}
@@ -228,30 +215,7 @@ const AboutPage = () => {
                   <div className="p-1 rounded text-sm font-semibold w-fit"></div>
                 </div>
               </div>
-              {/*EXPERIENCE LIST ITEM*/}
-              <div className="flex justify-between h-48">
-                {/*LEFT*/}
-                <div className="w-1/3">
-                  {/*JOB TITLE*/}
-                  <div className=" p-3 font-semibold rounded-b-lg rounded-s-lg"></div>
-                  {/*JOB DESCRIPTION*/}
-                  <div className="p-3 text-sm italic"></div>
-                  {/*JOB DATE*/}
-                  <div className="p-3 text-red-400 text-sm font-semibold"></div>
-                  {/*JOB COMPANY*/}
-                  <div className="p-1 rounded  text-sm font-semibold w-fit"></div>
-                </div>
-                {/*CENTER*/}
-                <div className="w-1/6 flex justify-center">
-                  {/*LINE*/}
-                  <div className="w-1 h-full  rounded relative">
-                    {/*LINE CIRCLE*/}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/*RIGHT*/}
-                <div className="w-1/3"></div>
-              </div>
+              
             </motion.div>
           </div>
         </div>
