@@ -1,6 +1,5 @@
 "use client";
 
-import { Download } from "feather-icons";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
