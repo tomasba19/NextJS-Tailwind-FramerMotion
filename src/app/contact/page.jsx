@@ -39,12 +39,12 @@ const ContactPage = () => {
 
   return (
     <motion.div
-      className="h-full"
+      className="h-full overflow-auto"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full overflow-scroll flex flex-col lg:flex-row px-4 sm:px-8 sm:m-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 sm:m-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
           <div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-full lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-7 justify-center p-14 max-h-sm m-8" 
+          className="h-3/4 lg:box-content lg:h-3/4 lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-7 justify-center p-14 m-8 border-b-2 border-b-gray-500 border-r-2 border-r-gray-500"
         >
           <span>Subject</span>
           <input
@@ -88,7 +88,6 @@ const ContactPage = () => {
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
-          <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
           </button>
