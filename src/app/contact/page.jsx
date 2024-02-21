@@ -88,7 +88,7 @@ const ContactPage = () => {
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
-          <button className="bg-purple-200 hover:bg-purple-300 rounded font-semibold text-gray-600 p-4">
+          <button className="bg-purple-200 hover:bg-purple-300 hover:drop-shadow-2xl rounded font-semibold text-gray-600 p-4">
             Send
           </button>
           {success && (

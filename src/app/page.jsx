@@ -47,7 +47,7 @@ const Homepage = () => {
           <div className="w-full flex gap-4 lg:w-full flex-row items-center justify-center">
             <button
               onClick={handleDownload}
-              className="p-4 w-40 rounded-lg ring-1 ring-black bg-black text-white flex items-center justify-center"
+              className="p-4 w-40 hover:drop-shadow-2xl rounded-lg ring-1 ring-black bg-black text-white flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,10 @@ const Homepage = () => {
               </svg>
               <span className="ml-3">Resume</span>
             </button>
-            <Link href="/contact" className="p-4 rounded-lg ring-1 ring-black">
+            <Link
+              href="/contact"
+              className="p-4 hover:shadow-inner-2xl rounded-lg ring-1 ring-black"
+            >
               Contact
             </Link>
           </div>
