@@ -11,7 +11,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "GreenLand",
     desc: "E-commerce eco-fiendly with payment processing, user registration, email sending, administration panel and third-party authentication..",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "/Greenland1.png",
     link: "https://greenland-client.vercel.app/",
   },
   {
@@ -19,7 +19,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Countries App",
     desc: "SPA based on the Country theme. This application allows the user to search, create and view the details of each country, as well as filter by continents and sort alphabetically or by population.    ",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "/countries1.jpg",
     link: "https://github.com/tomasba19/PI-Countries",
   },
   {
@@ -27,15 +27,15 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Rick And Morty",
     desc: "Rick And Morty website.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    img: "/rym1.png",
     link: "https://github.com/tomasba19/rick-and-morty",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Coming soon",
-    desc: "My next project.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "GitHub",
+    desc: "",
+    img: "/github1.png",
     link: "https://github.com/tomasba19",
   },
 ];
