@@ -37,7 +37,7 @@ const Homepage = () => {
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold md:text-left">
-            Hello, Im Tomas.
+            Hi, I&apos;m Tomás Barolo.
           </h1>
           {/* Description */}
           <p className="sm:text-xl md:text-3xl md:text-left font-semibold">

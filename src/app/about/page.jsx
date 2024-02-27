@@ -14,6 +14,7 @@ const AboutPage = () => {
     { once: true }
   );
 
+
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(
     experienceRef,
@@ -112,16 +113,38 @@ const AboutPage = () => {
                 SQL
               </div>
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Next.JS
-              </div>
-              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 GitHub
               </div>
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 PostGres
               </div>
+            </motion.div>
+            <motion.h1
+              initial={{ x: "-400px" }}
+              animate={isSkillRefInView ? { x: "0" } : {}}
+              transition={{ delay: 0.2 }}
+              className="font-bold text-2xl underline"
+            >
+              Learning
+            </motion.h1>
+            {/*SKILLS LEARNING LIST*/}
+            <motion.div
+              initial={{ x: "-400px" }}
+              animate={isSkillRefInView ? { x: "0" } : {}}
+              className="flex gap-4 flex-wrap"
+            >
+              
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Next.JS
+              </div>
               <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 TailwindCSS
+              </div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                FramerMotion
+              </div>
+              <div className=" rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Prisma
               </div>
             </motion.div>
             {/*SKILLS SCROLL SVG*/}

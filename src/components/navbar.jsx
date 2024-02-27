@@ -80,18 +80,18 @@ const NavBar = () => {
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className="text-white mr-1">Tomas</span>
+          <span className="text-white mr-1">Tomás</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
             Barolo
           </span>
         </Link>
       </div>
       {/* Social */}
-      <div className="hidden hover:drop-shadow-2xl md:flex gap-4 w-1/3 justify-center">
-        <Link href="https://github.com/tomasba19">
+      <div className="hover:drop-shadow-2xl flex gap-4 w-1/3 justify-center">
+        <Link href="https://github.com/tomasba19" >
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/tom%C3%A1s-barolo-83918a276/">
+        <Link href="https://www.linkedin.com/in/tom%C3%A1s-barolo-83918a276/" >
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
